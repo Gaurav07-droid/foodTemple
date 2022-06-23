@@ -1,0 +1,62 @@
+[
+  {
+    "id": 0,
+    "name": "The punjabi dhaba",
+    "timings": "9am to 6pm",
+    "ratingsAverage": 4.7,
+    "ratingsQuantity": 37,
+    "famousFor": "Daal makhni",
+    "description": "t enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "imageCover": "tour-1-cover.jpg",
+    "closedOn": ["tuesday", "saturday"],
+    "city": "Delhi"
+  },
+  {
+    "id": 1,
+    "name": "The spicy kitchen",
+    "timings": "9am to 5pm",
+    "ratingsAverage": 4.7,
+    "ratingsQuantity": 37,
+    "famousFor": "Paneer tikka",
+    "description": "t enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "imageCover": "tour-1-cover.jpg",
+    "closedOn": ["tuesday", "saturday"],
+    "city": "banglore"
+  },
+  {
+    "id": 2,
+    "name": "kathiawadi dhaba",
+    "timings": "10am to 4pm",
+    "ratingsAverage": 4.3,
+    "ratingsQuantity": 17,
+    "famousFor": "khamman",
+    "description": "t enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "imageCover": "tour-1-cover.jpg",
+    "closedOn": ["tuesday", "wednesday"],
+    "city": "gandhinagar"
+  },
+  {
+    "id": 3,
+    "name": "The lajiz",
+    "timings": "11am to 9pm",
+    "ratingsAverage": 4.8,
+    "ratingsQuantity": 32,
+    "famousFor": "biryani",
+    "description": "t enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "imageCover": "tour-1-cover.jpg",
+    "closedOn": ["saturday"],
+    "city": "noida"
+  },
+  {
+    "id": 4,
+    "name": "radhe restaurant",
+    "timings": "24 * 7",
+    "ratingsAverage": 4.1,
+    "ratingsQuantity": 24,
+    "famousFor": "chole bhature",
+    "description": "t enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "imageCover": "tour-1-cover.jpg",
+    "closedOn": ["saturday", "sunday"],
+    "city": "mathura"
+  }
+]

@@ -1,0 +1,12 @@
+extends base
+
+block content
+    section.section-managereview
+        .reviews
+            each user in users
+                .user-card
+                    img(src=`/img/users/${user.photo}`, alt=`${user.name}` )
+                    h2= `Name: ${user.name}`
+                    h2= `Role: ${user.role}`
+                    h2= `Email: ${user.email}`
+                    button.btn--red.btn--small(id='delete-user' data-userid=user.id) Delete

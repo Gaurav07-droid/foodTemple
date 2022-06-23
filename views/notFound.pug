@@ -1,0 +1,11 @@
+extend base
+
+block content
+
+    main.main
+        .error
+            .error__title
+                h2.heading-secondary.heading-secondary--error= `Sorry! No ${type} Found.`   
+                    h2.error__emoji 😢 🤯
+            .error__msg= `Book a ${type==='Reviews'?'restaurant first to give review!':'restaurant now!'} `
+            a.bookresto(href='/') click here to book..

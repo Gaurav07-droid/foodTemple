@@ -1,0 +1,39 @@
+extends base
+
+mixin cardData(icon,type)
+    .card__data
+        svg.card__icon
+            use(xlink:href=`/img/icons.svg#icon-${icon}`)
+        span= type
+
+block content
+    main.main
+        .card-container
+
+            each resto in restos
+                .card
+                    .card__header
+                        .card__picture
+                            .card__picture-overlay &nbsp;
+                            img.card__picture-img(src=`/resto/${resto.imageCover}`, alt=`${resto.slug}`)
+                        h3.heading-tertirary
+                            span= resto.name
+
+                    .card__details
+                        h4.card__sub-heading= `${resto.description.split(',')[0]}...` 
+                        //- p.card__text Breathtaking hike through the Canadian Banff National Park
+                        +cardData('map-pin',resto.city)
+                        +cardData('clock',resto.timings)
+                        +cardData('door',resto.closedOn)
+                        +cardData('call',resto.contact)
+                    .card__footer
+                        p
+                        
+                            span.card__footer-text Starting from
+                            |
+                            span.card__footer-value  --
+                        p.card__ratings
+                            span.card__footer-value= `${resto.ratingsAverage} rating`
+                             |
+                            span.card__footer-text= `(${resto.ratingsQuantity})`
+                        a.btn.btn--green.btn--small(href=`/restaurant/${resto.slug}`) View 

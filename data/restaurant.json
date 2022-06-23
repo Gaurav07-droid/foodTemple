@@ -1,0 +1,182 @@
+[
+  {
+    "id": 0,
+    "name": "Pizza lane",
+    "timings": "11Am to 11Pm",
+    "ratingsAverage": 4,
+    "ratingsQuantity": 96,
+    "description": "Restaurant to dine in or, take away",
+    "imageCover": "tour-1-cover.jpg",
+    "closedOn": ["Tuesday", "Saturday"],
+    "city": "Gandhinagar",
+    "contact": "--",
+    "images": ["food-1.jpg", "food-3.jpg", "food-2.jpg"],
+    "locations": [
+      {
+        "type": "Point",
+        "coordinates": [72.63544, 23.22091],
+        "address": "Plot no-1555, Sector 6-b, Sector B, Sector 6, Gandhinagar, Gujarat 382006"
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "name": "Someplace Else",
+    "timings": "11Am to 11Pm",
+    "ratingsAverage": 4.2,
+    "ratingsQuantity": 444,
+    "description": "Local & global staples including curries, noodles & biryani are served at this relaxed restaurant.",
+    "imageCover": "tour-1-cover.jpg",
+    "closedOn": ["Open All Days"],
+    "city": "Gandhinagar",
+    "contact": "9638413460",
+    "images": ["food-1.jpg", "food-3.jpg", "food-2.jpg"],
+    "locations": [
+      {
+        "type": "Point",
+        "coordinates": [72.64865, 23.21507],
+        "address": "Near, 7th Floor, White House, Kishan Cir, Sector 11, Gandhinagar, Gujarat 382011"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Rajwadi bhojnalaya",
+    "timings": "10Am to 3Pm",
+    "ratingsAverage": 4.1,
+    "ratingsQuantity": 624,
+    "description": "Gujrati restaurant for dine-in or, take away",
+    "imageCover": "tour-1-cover.jpg",
+    "closedOn": ["Open All Days"],
+    "city": "Gandhinagar",
+    "contact": "--",
+    "images": ["food-1.jpg", "food-3.jpg", "food-2.jpg"],
+    "locations": [
+      {
+        "type": "Point",
+        "coordinates": [72.6367, 23.21162],
+        "address": "B-101,first floor, Acme House, Sector 6, Gandhinagar, Gujarat 382006"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Pramukh kathiyawadi bhojnalaya",
+    "timings": "11Am to 10:30Pm",
+    "ratingsAverage": 4,
+    "ratingsQuantity": 385,
+    "description": "Gujrati restaurant for dine-in or, take away",
+    "imageCover": "tour-1-cover.jpg",
+    "closedOn": ["Open All Days"],
+    "city": "Gandhinagar",
+    "contact": "9725162686",
+    "images": ["food-1.jpg", "food-3.jpg", "food-2.jpg"],
+    "locations": [
+      {
+        "type": "Point",
+        "coordinates": [72.63644, 23.21087],
+        "address": "Plot no. 1553,Sector 6 PRAMUKH KATHIYAVADI BHOJANALAY, above Iscon Ganthiya, Gandhinagar, Gujarat 382006"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "La Milano Pizzerria",
+    "timings": "11Am to 11Pm",
+    "ratingsAverage": 4.7,
+    "ratingsQuantity": 145,
+    "description": "Pizza restaurant",
+    "imageCover": "tour-1-cover.jpg",
+    "closedOn": ["Open All Days"],
+    "city": "Gandhinagar",
+    "contact": "8810719505",
+    "images": ["food-1.jpg", "food-3.jpg", "food-2.jpg"],
+    "locations": [
+      {
+        "type": "Point",
+        "coordinates": [72.64605, 23.238],
+        "address": "1 & 2 , Ground Floor , Skyline, Sector 11, Gandhinagar, Gujarat 382011"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Sankalp Restaurant",
+    "timings": "11Am to 11Pm",
+    "ratingsAverage": 4,
+    "ratingsQuantity": 3892,
+    "description": "South indian restaurant",
+    "imageCover": "tour-1-cover.jpg",
+    "closedOn": ["Open All Days"],
+    "city": "Gandhinagar",
+    "contact": "9925225715",
+    "images": ["food-1.jpg", "food-3.jpg", "food-2.jpg"],
+    "locations": [
+      {
+        "type": "Point",
+        "coordinates": [72.63313, 23.19661],
+        "address": "Shop No.101 Super Mall-1, Infocity, Gandhinagar, Gujarat 382009"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Green Apple Restaurant",
+    "timings": "10:30Am to 10:30Pm",
+    "ratingsAverage": 4.1,
+    "ratingsQuantity": 3900,
+    "description": "Restaurant to dine-in or, takeaway",
+    "imageCover": "tour-1-cover.jpg",
+    "closedOn": ["Open All Days"],
+    "city": "Gandhinagar",
+    "contact": "9662653440",
+    "images": ["food-1.jpg", "food-3.jpg", "food-2.jpg"],
+    "locations": [
+      {
+        "type": "Point",
+        "coordinates": [72.64836, 23.22932],
+        "address": "1st Floor, Nr. Gandhinagar Nagrik Bank GH-4II, Sector 16, Gandhinagar, Gujarat 382016"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "BlueBerry Restaurant",
+    "timings": "10:30Am to 10:30Pm",
+    "ratingsAverage": 4.5,
+    "ratingsQuantity": 924,
+    "description": "Bright easygoing restaurant serving, traditional gravies, soups & tandoori dishes, plus mocktails.",
+    "imageCover": "tour-1-cover.jpg",
+    "closedOn": ["Open All Days"],
+    "images": ["food-1.jpg", "food-3.jpg", "food-2.jpg"],
+    "city": "Gandhinagar",
+    "contact": "8490994429",
+    "locations": [
+      {
+        "type": "Point",
+        "coordinates": [72.64687, 23.227],
+        "address": "1st Floor, Plot No. 316, Gh-4, above Indian Bank, Sector 16, Gandhinagar, Gujarat 382016"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Mocha Gandhinagar",
+    "timings": "11:30Am to 11:15Pm",
+    "ratingsAverage": 4.3,
+    "ratingsQuantity": 1640,
+    "description": "Good food and ambience space to eat or, work to have a coffee with.",
+    "imageCover": "tour-1-cover.jpg",
+    "closedOn": ["Open All Days"],
+    "images": ["food-1.jpg", "food-3.jpg", "food-2.jpg"],
+    "city": "Gandhinagar",
+    "contact": "9081113330",
+    "locations": [
+      {
+        "type": "Point",
+        "coordinates": [72.63668, 23.19624],
+        "address": "Infocity Club And Resort,InfoCity Club, Near Indroda Circle, Infocity, Gandhinagar, Gujarat 382009"
+      }
+    ]
+  }
+]
