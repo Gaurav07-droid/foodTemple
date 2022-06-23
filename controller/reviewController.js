@@ -18,11 +18,6 @@ exports.getReview = controllerFactory.getOne(Review);
 exports.deleteReview = controllerFactory.deleteOne(Review);
 exports.updateReview = controllerFactory.updateOne(Review);
 
-exports.getRestaurant = (req, res, next) => {
-  console.log(req.originalUrl);
-  next();
-};
-
 exports.checkMyReview = async (req, res, next) => {
   const resto = await Resto.findOne({ slug: req.originalUrl.slug });
 
@@ -44,9 +39,9 @@ exports.checkRestoBooked = async (req, res, next) => {
   const booking = await Booking.find({ user: req.user.id });
   const restos = booking.map((el) => el.restaurant._id);
 
-  console.log(restos);
+  // console.log(restos);
   const bookedResto = restos.filter((el) => el == restoId);
-  console.log(bookedResto.length === 0);
+  // console.log(bookedResto.length === 0);
   // console.log(restos.forEach((restoId) === false);
 
   if (bookedResto.length === 0)

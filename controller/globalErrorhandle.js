@@ -12,7 +12,7 @@ const handleDupKeyError = (err) => {
 };
 
 const handleValidationError = (err) => {
-  console.log(err.name);
+  // console.log(err.name);
   const errors = Object.values(err.errors).map((el) => el.message);
 
   const message = `Invalid input data.${errors.join('. ')}`;

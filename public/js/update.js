@@ -5,7 +5,7 @@ export const updateData = async (data) => {
   try {
     const res = await axios({
       method: 'PATCH',
-      url: 'http://127.0.0.1:8000/api/v1/users/updateMe',
+      url: '/api/v1/users/updateMe',
       data,
     });
 
@@ -30,7 +30,7 @@ export const updatePassword = async (
   try {
     const res = await axios({
       method: 'PATCH',
-      url: 'http://127.0.0.1:8000/api/v1/users/updatePassword',
+      url: '/api/v1/users/updatePassword',
       data: {
         passwordCurrent,
         password,
@@ -56,8 +56,8 @@ exports.deleting = async (type, Id) => {
     let URL;
 
     type === 'Restaurant'
-      ? (URL = `http://127.0.0.1:8000/api/v1/restaurants/${Id}`)
-      : (URL = `http://127.0.0.1:8000/api/v1/users/${Id}`);
+      ? (URL = `/api/v1/restaurants/${Id}`)
+      : (URL = `/api/v1/users/${Id}`);
 
     const res = await axios({
       method: 'DELETE',

@@ -13,7 +13,7 @@ const getLocation = async (lat, lng) => {
     // if(req.originalUrl==='')
     const res = await axios({
       method: 'GET',
-      url: `http://127.0.0.1:8000/api/v1/restaurants/distances/${[
+      url: `/api/v1/restaurants/distances/${[
         lat,
         lng,
       ]}/unit/km`,
