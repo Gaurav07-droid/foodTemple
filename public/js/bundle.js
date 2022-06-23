@@ -11243,25 +11243,25 @@ exports.deleting = /*#__PURE__*/function () {
 
           case 4:
             res = _context3.sent;
-            console.log(res);
+            // console.log(res);
             if (res.status === 204) (0, _alert.showAlert)('success', "".concat(type, " deleted succesfully"));
             window.setTimeout(function () {
               location.reload(true);
             }, 2000);
-            _context3.next = 13;
+            _context3.next = 12;
             break;
 
-          case 10:
-            _context3.prev = 10;
+          case 9:
+            _context3.prev = 9;
             _context3.t0 = _context3["catch"](0);
             (0, _alert.showAlert)('error', _context3.t0);
 
-          case 13:
+          case 12:
           case "end":
             return _context3.stop();
         }
       }
-    }, _callee3, null, [[0, 10]]);
+    }, _callee3, null, [[0, 9]]);
   }));
 
   return function (_x5, _x6) {
@@ -11314,7 +11314,6 @@ var getLocation = /*#__PURE__*/function () {
             if (res.data.status === 'success') result = res.data.data.data.forEach(function (el) {
               if (el.name === restoName) textDistance.textContent = "".concat(el.distance.toFixed(1), " Km away from you");
             }); // console.log(res);
-            // textDistance.textContent = ` km away from you`;
 
             _context.next = 10;
             break;

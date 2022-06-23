@@ -64,7 +64,7 @@ exports.deleting = async (type, Id) => {
       url: URL,
     });
 
-    console.log(res);
+    // console.log(res);
 
     if (res.status === 204) showAlert('success', `${type} deleted succesfully`);
 

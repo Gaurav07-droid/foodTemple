@@ -28,8 +28,6 @@ const getLocation = async (lat, lng) => {
       });
 
     // console.log(res);
-
-    // textDistance.textContent = ` km away from you`;
   } catch (err) {
     showAlert('error', err.message);
   }
