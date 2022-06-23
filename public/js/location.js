@@ -22,9 +22,7 @@ const getLocation = async (lat, lng) => {
     if (res.data.status === 'success')
       result = res.data.data.data.forEach((el) => {
         if (el.name === restoName)
-          textDistance.textContent = `${el.distance.toFixed(
-            1
-          )} Km away from you`;
+          textDistance.textContent = `${el.distance.toFixed(1)}Km from you`;
       });
 
     // console.log(res);
@@ -42,7 +40,10 @@ export const getCordinates = () => {
         return getLocation(latitude, longitude);
       },
       function () {
-        showAlert('error', 'Sorry!Could not get your location');
+        showAlert(
+          'error',
+          'Sorry!Could not get your location.Please allow access to get your location'
+        );
       }
     );
 };

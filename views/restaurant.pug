@@ -27,13 +27,12 @@ block content
                 .heading-box__detail
                     svg.heading-box__icon
                         use(xlink:href='/img/icons.svg#icon-clock')
-                    span.heading-box__text= resto.timings
+                    span.heading-box__text=`${resto.timings}`
                 .heading-box__detail
                     svg.heading-box__icon(id='pin')
-                        use(xlink:href='/img/icons.svg#icon-map-pin')
-                            
-                    span.heading-box__text(id='distance-text' data-name=resto.name)= `${resto.city}, Gujarat`
-                button.btn.btn--green(id='distance') Get distance
+                        use(xlink:href='/img/icons.svg#icon-map-pin')        
+                    span.heading-box__text(id='distance-text' data-name=resto.name)=`${resto.city},Gujarat`
+                a.btn.btn--green(id='distance') Get distance
 
     section.section-description
         .overview-box

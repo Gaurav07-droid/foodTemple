@@ -57,7 +57,7 @@ if (mapEl) {
 if (distanceBtn)
   distanceBtn.addEventListener('click', () => {
     getCordinates();
-    distanceBtn.classList.add('hidden');
+    // distanceBtn.classList.add('hidden');
   });
 
 if (formDataUpdate)

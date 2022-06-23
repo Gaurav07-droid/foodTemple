@@ -11312,7 +11312,7 @@ var getLocation = /*#__PURE__*/function () {
           case 3:
             res = _context.sent;
             if (res.data.status === 'success') result = res.data.data.data.forEach(function (el) {
-              if (el.name === restoName) textDistance.textContent = "".concat(el.distance.toFixed(1), " Km away from you");
+              if (el.name === restoName) textDistance.textContent = "".concat(el.distance.toFixed(1), "Km from you");
             }); // console.log(res);
 
             _context.next = 10;
@@ -11344,7 +11344,7 @@ var getCordinates = function getCordinates() {
 
     return getLocation(latitude, longitude);
   }, function () {
-    (0, _alert.showAlert)('error', 'Sorry!Could not get your location');
+    (0, _alert.showAlert)('error', 'Sorry!Could not get your location.Please allow access to get your location');
   });
 };
 
@@ -11946,8 +11946,7 @@ if (mapEl) {
 
 
 if (distanceBtn) distanceBtn.addEventListener('click', function () {
-  (0, _location.getCordinates)();
-  distanceBtn.classList.add('hidden');
+  (0, _location.getCordinates)(); // distanceBtn.classList.add('hidden');
 });
 if (formDataUpdate) formDataUpdate.addEventListener('submit', function (e) {
   e.preventDefault();
