@@ -11394,27 +11394,27 @@ var login = /*#__PURE__*/function () {
 
             // console.log(res);
             if (res.data.status === 'success') {
-              (0, _alert.showAlert)('success', 'Logged in succesfully!');
-              window.setTimeout(function () {
-                location.assign('/');
-              }, 2000);
-            } // console.log(res);
+              (0, _alert.showAlert)('success', 'Logged in succesfully!'); //   window.setTimeout(() => {
+              //     location.assign('/');
+              //   }, 2000);
+            }
 
-
-            _context.next = 10;
+            console.log(res);
+            _context.next = 12;
             break;
 
-          case 7:
-            _context.prev = 7;
+          case 8:
+            _context.prev = 8;
             _context.t0 = _context["catch"](0);
+            console.log(_context.t0);
             (0, _alert.showAlert)('error', _context.t0.response.data.message);
 
-          case 10:
+          case 12:
           case "end":
             return _context.stop();
         }
       }
-    }, _callee, null, [[0, 7]]);
+    }, _callee, null, [[0, 8]]);
   }));
 
   return function login(_x, _x2) {
