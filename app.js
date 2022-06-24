@@ -8,6 +8,7 @@ const xss = require('xss-clean');
 const hpp = require('hpp');
 const cookieParser = require('cookie-parser');
 const compression = require('compression');
+const cors = require('cors');
 
 const restoRouter = require('./routes/restaurantRoute');
 const userRouter = require('./routes/userRoutes');
@@ -37,6 +38,11 @@ app.use('/api', limiter);
 //body parser,reading data from the req.body
 app.use(express.json({ limit: '10kb' }));
 app.use(cookieParser());
+
+//Access-Control-Allow-Origin headers to all
+app.use(cors());
+app.options('*', cors());
+// app.options('/api/v1/restaurant/:id', cors());
 
 //set security http headers
 // app.use(helmet());
