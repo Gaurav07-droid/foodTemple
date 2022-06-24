@@ -22,8 +22,8 @@ export const login = async (email, password) => {
     }
     // console.log(res);
   } catch (err) {
-    console.log(err);
-    showAlert('error', 'Incorrect email or password');
+    // console.log(err);
+    showAlert('error', 'Incorrect email or password!');
   }
 };
 

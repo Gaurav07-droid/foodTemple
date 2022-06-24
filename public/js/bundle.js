@@ -11401,16 +11401,16 @@ var login = /*#__PURE__*/function () {
             } // console.log(res);
 
 
-            _context.next = 11;
+            _context.next = 10;
             break;
 
           case 7:
             _context.prev = 7;
             _context.t0 = _context["catch"](0);
-            console.log(_context.t0);
-            (0, _alert.showAlert)('error', 'Incorrect email or password');
+            // console.log(err);
+            (0, _alert.showAlert)('error', 'Incorrect email or password!');
 
-          case 11:
+          case 10:
           case "end":
             return _context.stop();
         }

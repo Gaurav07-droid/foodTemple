@@ -21,6 +21,7 @@ router.get(
 router.get('/login', authController.isLoggedIn, viewController.getLoginForm);
 router.get('/signup', viewController.signUp);
 router.get('/me', authController.protect, viewController.geMe);
+
 router.get(
   '/my-bookings',
   authController.protect,

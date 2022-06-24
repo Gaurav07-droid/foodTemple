@@ -60,7 +60,7 @@ exports.getRestoBooked = async (req, res, next) => {
     //Render not found errors
 
     if (bookings.length === 0 && restos.length === 0)
-      res.status(404).render('notFound', {
+      return res.status(404).render('notFound', {
         title: 'Not Found',
         type: 'Bookings',
       });
@@ -81,7 +81,7 @@ exports.getMyReviews = async (req, res, next) => {
 
   //Render not found errors
   if (reviews.length === 0)
-    res.status(404).render('notFound', {
+    return res.status(404).render('notFound', {
       title: 'Not Found',
       type: 'Reviews',
     });
