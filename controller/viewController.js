@@ -86,7 +86,7 @@ exports.getMyReviews = async (req, res, next) => {
       type: 'Reviews',
     });
 
-  res.status(200).render('myReviews', {
+  return res.status(200).render('myReviews', {
     title: 'my reviews',
     reviews,
   });
