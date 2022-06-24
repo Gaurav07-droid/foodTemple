@@ -15,6 +15,7 @@ const userRouter = require('./routes/userRoutes');
 const reviewRouter = require('./routes/reviewRoutes');
 const viewRouter = require('./routes/viewRoutes');
 const bookingRouter = require('./routes/bookingRoutes');
+const bookingController = require('./controller/bookingController');
 
 const AppError = require('./utils/appError');
 const globalErrorHandler = require('./controller/globalErrorhandle');
@@ -35,6 +36,14 @@ const limiter = rateLimit({
 });
 
 app.use('/api', limiter);
+
+//call this before the body parser
+app.post(
+  '/webhook-checkout',
+  express.raw({ type: 'application/json' }),
+  bookingController.webhookCheckout
+);
+
 //body parser,reading data from the req.body
 app.use(express.json({ limit: '10kb' }));
 app.use(cookieParser());
