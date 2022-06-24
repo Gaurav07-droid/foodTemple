@@ -11394,27 +11394,28 @@ var login = /*#__PURE__*/function () {
 
             // console.log(res);
             if (res.data.status === 'success') {
-              (0, _alert.showAlert)('success', 'Logged in succesfully!'); //   window.setTimeout(() => {
-              //     location.assign('/');
-              //   }, 2000);
-            }
+              (0, _alert.showAlert)('success', 'Logged in succesfully!');
+              window.setTimeout(function () {
+                location.assign('/');
+              }, 2000);
+            } // console.log(res);
 
-            console.log(res);
-            _context.next = 12;
+
+            _context.next = 11;
             break;
 
-          case 8:
-            _context.prev = 8;
+          case 7:
+            _context.prev = 7;
             _context.t0 = _context["catch"](0);
             console.log(_context.t0);
-            (0, _alert.showAlert)('error', _context.t0.response.data.message);
+            (0, _alert.showAlert)('error', 'Incorrect email or password');
 
-          case 12:
+          case 11:
           case "end":
             return _context.stop();
         }
       }
-    }, _callee, null, [[0, 8]]);
+    }, _callee, null, [[0, 7]]);
   }));
 
   return function login(_x, _x2) {
@@ -11556,28 +11557,26 @@ var bookResto = /*#__PURE__*/function () {
 
           case 3:
             session = _context.sent;
-            console.log(session); //2.. create checkout form + charge card
-
-            _context.next = 7;
+            _context.next = 6;
             return stripe.redirectToCheckout({
               sessionId: session.data.session.id
             });
 
-          case 7:
-            _context.next = 12;
+          case 6:
+            _context.next = 11;
             break;
 
-          case 9:
-            _context.prev = 9;
+          case 8:
+            _context.prev = 8;
             _context.t0 = _context["catch"](0);
             console.log(_context.t0);
 
-          case 12:
+          case 11:
           case "end":
             return _context.stop();
         }
       }
-    }, _callee, null, [[0, 9]]);
+    }, _callee, null, [[0, 8]]);
   }));
 
   return function bookResto(_x) {
@@ -11945,8 +11944,9 @@ if (mapEl) {
 // btnView.addEventListener('click', getLocation());
 
 
-if (distanceBtn) distanceBtn.addEventListener('click', function () {
-  (0, _location.getCordinates)(); // distanceBtn.classList.add('hidden');
+if (distanceBtn) distanceBtn.addEventListener('click', function (e) {
+  (0, _location.getCordinates)();
+  e.target.classList.add('hidden');
 });
 if (formDataUpdate) formDataUpdate.addEventListener('submit', function (e) {
   e.preventDefault();
@@ -12019,7 +12019,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59141" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58171" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

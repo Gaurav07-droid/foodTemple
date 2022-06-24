@@ -11,7 +11,7 @@ export const bookResto = async (restoId) => {
       method: 'GET',
       url: `/api/v1/bookings/checkout-session/${restoId}`,
     });
-    console.log(session);
+    // console.log(session);
 
     //2.. create checkout form + charge card
     await stripe.redirectToCheckout({

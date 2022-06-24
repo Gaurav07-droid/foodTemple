@@ -55,9 +55,9 @@ if (mapEl) {
 //getting location of the user
 // btnView.addEventListener('click', getLocation());
 if (distanceBtn)
-  distanceBtn.addEventListener('click', () => {
+  distanceBtn.addEventListener('click', (e) => {
     getCordinates();
-    // distanceBtn.classList.add('hidden');
+    e.target.classList.add('hidden');
   });
 
 if (formDataUpdate)

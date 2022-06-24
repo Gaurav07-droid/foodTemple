@@ -58,7 +58,7 @@ const prodError = (req, err, res) => {
       //2) send genric message
       return res.status(500).json({
         status: 'fail',
-        message: 'Something went very wrong ',
+        message: 'Oops!something went wrong',
       });
     }
   } else {
@@ -90,14 +90,12 @@ module.exports = (err, req, res, next) => {
     devError(req, err, res);
   } else if (process.env.NODE_ENV === 'production') {
     let error = { ...err };
-
     if (err.name === 'CastError') error = handleCastError(err);
     if (err.code === 11000) error = handleDupKeyError(err);
     if (err.name === 'ValidationError') error = handleValidationError(err);
     if (err.name === 'JsonWebTokenError') error = handlejwtError();
     if (err.name === 'TokenExpiredError') error = handlejwtExpiredError();
 
-    // console.log(err.name);
     prodError(req, error, res);
   }
 };

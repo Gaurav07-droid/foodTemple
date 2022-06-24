@@ -68,7 +68,7 @@ exports.login = catchAsync(async (req, res, next) => {
 
   // through bcrypt.compare in model by ceating instance method
   if (!user || !(await user.correctPassword(password, user.password))) {
-    return next(new AppError('Incorect email or password!', 401));
+    return next(new AppError('Incorrect email or password!', 401));
   }
 
   createSendToken(req, user, 200, res);
