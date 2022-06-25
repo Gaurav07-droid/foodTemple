@@ -23,17 +23,14 @@ block content
                         h4.card__sub-heading= `${resto.description.split(',')[0]}...` 
                         //- p.card__text Breathtaking hike through the Canadian Banff National Park
                         +cardData('map-pin',resto.city)
-                        +cardData('clock',resto.timings)
                         +cardData('door',resto.closedOn)
+                        +cardData('user-check','Booked')
                         +cardData('call',resto.contact)
-                    .card__footer
-                        p
-
-                            span.card__footer-text Starting from
-                            |
-                            span.card__footer-value  --
-                        p.card__ratings
-                            span.card__footer-value= `${resto.ratingsAverage} rating`
-                                |
-                            span.card__footer-text= `(${resto.ratingsQuantity})`
-                        a.btn.btn--green.btn--small(href=`/restaurant/${resto.slug}`) View 
+                    a.btn.btn--green.btn--small(href=`/restaurant/${resto.slug}`) Book again! 
+                    //- .card__footer
+                    //-     p
+                    //-         span.card__footer-text= date
+                    //-         |
+                    //-         span.card__footer-value
+                    //-     p.card__ratings
+                    //-         span.card__footer-valueclick 
