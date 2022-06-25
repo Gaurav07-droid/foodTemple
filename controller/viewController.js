@@ -5,14 +5,14 @@ const User = require('../models/userModel');
 const Booking = require('../models/bookingModel');
 const Review = require('../models/reviewModel');
 
-exports.alerts = (req, res, next) => {
-  const { alert } = req.query;
+// exports.alerts = (req, res, next) => {
+//   const { alert } = req.query;
 
-  if (alert === 'booking')
-    res.locals.alert =
-      'Your booking was successfull!If your booking is not showing here.Please came back later';
-  next();
-};
+//   if (alert === 'booking')
+//     res.locals.alert =
+//       'Your booking was successfull!If your booking is not showing here.Please came back later';
+//   next();
+// };
 
 exports.getOverview = catchAsync(async (req, res) => {
   //Find all the data

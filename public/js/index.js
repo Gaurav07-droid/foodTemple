@@ -3,7 +3,7 @@ import { updateData, updatePassword, deleting } from './update.js';
 import { getCordinates } from './location.js';
 import { login, logOut, signUp } from './auth.js';
 import { bookResto } from './stripe.js';
-import { showAlert } from './alert.js';
+import showAlert from './alert.js';
 
 const btnBookResto = document.getElementById('book-resto');
 const inputName = document.getElementById('name');
@@ -132,5 +132,5 @@ if (btnDeleteUser)
     })
   );
 
-const alertMessage = document.querySelector('body').dataset.alert;
-if (alert) showAlert('success', alertMessage);
+// const alertMessage = document.querySelector('body').dataset.alert;
+// if (alert) showAlert('success', alertMessage);
