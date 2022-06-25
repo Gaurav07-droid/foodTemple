@@ -80,11 +80,12 @@ exports.webhookCheckout = (req, res, next) => {
       process.env.Stripe_webhook_secret
     );
   } catch (err) {
-    console.log(err);
+    return res.status(400).send(`webhook error: ${err.message}`);
+    // console.log(err);
   }
 
   if (event.type === 'checkout.session.completed')
-    createBookingDatabse(event.object.data);
+    createBookingDatabse(event.data.object);
 
   res.status(200).json({ received: true });
 };
