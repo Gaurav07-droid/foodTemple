@@ -9,7 +9,7 @@ export const updateData = async (data) => {
       data,
     });
 
-    // console.log(res);
+    console.log(res);
 
     if (res.data.status === 'success')
       showAlert('success', 'Data updated succesfully!');
@@ -18,7 +18,8 @@ export const updateData = async (data) => {
       location.reload(true);
     }, 1500);
   } catch (err) {
-    showAlert('error', err.message);
+    // console.log(err);
+    showAlert('error', err.response.data.message);
   }
 };
 

@@ -37,7 +37,7 @@ exports.resizeUserPhoto = catchAsync(async (req, res, next) => {
 
   req.file.filename = `user-${req.user.id}-${Date.now()}.jpeg`;
 
-  await sharp(req.files.buffer)
+  await sharp(req.file.buffer)
     .resize(500, 500)
     .toFormat('jpeg')
     .jpeg({ quality: 90 })
@@ -59,7 +59,7 @@ const filterObj = function (obj, ...fieldsToUpdate) {
 exports.getAllUser = controllerFactory.getAll(User);
 
 exports.updateMe = catchAsync(async (req, res, next) => {
-  console.log(req.file);
+  // console.log(req.file);
   // console.log(req.body);
 
   if (req.body.password || req.body.passwordConfirm) {
